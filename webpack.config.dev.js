@@ -3,7 +3,8 @@ const webpack = require('webpack'),
   srcDir = path.resolve( __dirname, 'src' ),
   publicDir = path.resolve( __dirname, 'public' ),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
-  ReloadPlugin = require('reload-html-webpack-plugin')
+  ReloadPlugin = require('reload-html-webpack-plugin'),
+  ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   context: srcDir,
@@ -41,6 +42,17 @@ module.exports = {
         use: 'json-loader'
       },
       {
+        test: [/\.css$/],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            'postcss-loader'
+          ]
+        }),
+        exclude: /node_modules/
+      },
+      {
         test: /\.scss$/,
         use: [
           'style-loader',
@@ -66,6 +78,11 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new ReloadPlugin(),
+    new ExtractTextPlugin({
+      filename: path.join(srcDir, 'components/vendors/theme.css'),
+      disable: false,
+      allChunks: true
+    }),
     new HtmlWebpackPlugin({
       title: 'Zultrail',
       description: 'Una app para el alquiler de vehiculos.',

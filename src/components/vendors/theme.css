@@ -1,6 +1,6 @@
-/* @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,800,900,400,300);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 /* --------------------------------------------------------------------------
  * jThemes Studio : RENT IT - Car Rental Management Template
  *
@@ -247,7 +247,7 @@ body {
   color: #8e9091;
 }
 .page-section.image {
-  background: url(../img/page-section-image.png) center top no-repeat;
+  /* background: url(../img/page-section-image.png) center top no-repeat; */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -2785,16 +2785,16 @@ input[type=checkbox] {
   }
 }
 .main-slider .slide1 {
-  background-image: url('../img/preview/slider/slide-1.jpg');
+  /* background-image: url('../img/preview/slider/slide-1.jpg'); */
 }
 .main-slider .slide2 {
-  background-image: url('../img/preview/slider/slide-1.jpg');
+  /* background-image: url('../img/preview/slider/slide-1.jpg'); */
 }
 .main-slider .slide3 {
-  background-image: url('../img/preview/slider/slide-2.jpg');
+  /* background-image: url('../img/preview/slider/slide-2.jpg'); */
 }
 .main-slider .slide4 {
-  background-image: url('../img/preview/slider/slide-3.jpg');
+  /* background-image: url('../img/preview/slider/slide-3.jpg'); */
 }
 .main-slider-row .slider .main-slider .owl-nav [class*=owl-] {
   position: absolute;
@@ -2910,7 +2910,7 @@ input[type=checkbox] {
   min-height: 0 !important;
 }
 .coming-soon .main-slider .page {
-  background: transparent url("../img/preview/slider/slide-3.jpg") no-repeat center center;
+  /* background: transparent url("../img/preview/slider/slide-3.jpg") no-repeat center center; */
   background-size: cover;
 }
 .coming-soon .main-slider .caption-content {
@@ -3248,7 +3248,7 @@ input[type=checkbox] {
 /* Testimonials carousel / OwlCarousel
 /* ========================================================================== */
 .page-section.testimonials {
-  background: #e9e9e9 url(../img/transparent-bg.png) center top no-repeat;
+  /* background: #e9e9e9 url(../img/transparent-bg.png) center top no-repeat; */
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 20px;
@@ -7928,7 +7928,7 @@ input[type=checkbox] {
 /* Contact form
 /* ========================================================================== */
 .page-section.contact {
-  background: url(../img/preview/page-section-contact-2.jpg) center top no-repeat;
+  /* background: url(../img/preview/page-section-contact-2.jpg) center top no-repeat; */
   background-size: cover;
 }
 .page-section.contact:after {
