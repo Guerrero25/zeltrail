@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import Nav from './nav'
 
+import logo from '../assets/img/logo-rentit.png'
+
 class Header extends Component {
     constructor (props) {
         super(props)
@@ -8,15 +10,15 @@ class Header extends Component {
 
     render () {
         return (
-            <header class="header fixed">
-                <div class="header-wrapper">
-                    <div class="container">
+            <header className="header fixed">
+                <div className="header-wrapper">
+                    <div className="container">
 
-                        <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo-rentit.png" alt="Rent It"/></a>
+                        <div className="logo">
+                            <a href="index.html"><img src={logo} alt="Rent It"/></a>
                         </div>
-                            toggle button -->
-                        <a href="#" class="menu-toggle btn ripple-effect btn-theme-transparent"><i class="fa fa-bars"></i></a>
+                        
+                        <a href="#" className="menu-toggle btn ripple-effect btn-theme-transparent"><i className="fa fa-bars"></i></a>
                         
                         <Nav />
 

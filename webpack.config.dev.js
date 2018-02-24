@@ -79,7 +79,7 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new ReloadPlugin(),
     new ExtractTextPlugin({
-      filename: path.join(srcDir, 'components/vendors/theme.css'),
+      filename: 'style.css',
       disable: false,
       allChunks: true
     }),
@@ -89,6 +89,7 @@ module.exports = {
       template: path.join(srcDir, 'template.html'),
       filename: 'index.html',
       chunks: ['script']
-    })
+    }),
+    new webpack.ContextReplacementPlugin(/\.\/locale$/, 'empty-module', false, /js$/)
   ]
 }

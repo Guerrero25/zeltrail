@@ -7,13 +7,13 @@ class Nav extends Component {
 
     render () {
         return (
-            <nav class="navigation closed clearfix">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <nav className="navigation closed clearfix">
+                <div className="swiper-wrapper">
+                    <div className="swiper-slide">
                         
-                        <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
-                        <ul class="nav sf-menu">
-                            <li class="active"><a href="index.html">Home</a>
+                        <a href="#" className="menu-toggle-close btn"><i className="fa fa-times"></i></a>
+                        <ul className="nav sf-menu">
+                            <li className="active"><a href="index.html">Home</a>
                                 <ul>
                                     <li><a href="index.html">Home 1</a></li>
                                     <li><a href="index-2.html">Home 2</a></li>
@@ -26,16 +26,16 @@ class Nav extends Component {
                             <li><a href="car-listing.html">Hot Deals</a></li>
                             <li><a href="car-listing.html">Vehicles</a></li>
                             <li><a href="faqs.html">FAQS</a></li>
-                            <li class="megamenu sale"><a href="#">Features</a>
+                            <li className="megamenu sale"><a href="#">Features</a>
                                 <ul>
-                                    <li class="row">
-                                        <div class="col-md-3">
-                                            <h4 class="block-title"><span>Paragraph</span></h4>
+                                    <li className="row">
+                                        <div className="col-md-3">
+                                            <h4 className="block-title"><span>Paragraph</span></h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                                             <p>Suspendisse molestie est nec tortor placerat, vel pellentesque metus sollicitudin. Suspendisse congue sem mauris, at ultrices felis blandit non.</p>
                                         </div>
-                                        <div class="col-md-3">
-                                            <h4 class="block-title"><span>Portfolio</span></h4>
+                                        <div className="col-md-3">
+                                            <h4 className="block-title"><span>Portfolio</span></h4>
                                             <ul>
                                                 <li><a href="portfolio.html">Portfolio 3 Columns</a></li>
                                                 <li><a href="portfolio-4col.html">Portfolio 4 Columns</a></li>
@@ -43,8 +43,8 @@ class Nav extends Component {
                                                 <li><a href="portfolio-single.html">Portfolio Single</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-3">
-                                            <h4 class="block-title"><span>Pages</span></h4>
+                                        <div className="col-md-3">
+                                            <h4 className="block-title"><span>Pages</span></h4>
                                             <ul>
                                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                                                 <li><a href="typography.html">Typography</a></li>
@@ -52,8 +52,8 @@ class Nav extends Component {
                                                 <li><a href="error-page.html">404 Page</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-3">
-                                            <h4 class="block-title"><span>Pages</span></h4>
+                                        <div className="col-md-3">
+                                            <h4 className="block-title"><span>Pages</span></h4>
                                             <ul>
                                                 <li><a href="car-listing.html">Car Listing</a></li>
                                                 <li><a href="booking.html">Booking & Payment</a></li>
@@ -73,17 +73,17 @@ class Nav extends Component {
                             </li>
                             <li><a href="contact.html">Contact</a></li>
                             <li>
-                                <ul class="social-icons">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                <ul className="social-icons">
+                                    <li><a href="#" className="facebook"><i className="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" className="twitter"><i className="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" className="instagram"><i className="fa fa-instagram"></i></a></li>
+                                    <li><a href="#" className="pinterest"><i className="fa fa-pinterest"></i></a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="swiper-scrollbar"></div>
+                <div className="swiper-scrollbar"></div>
             </nav>
         )
     }
