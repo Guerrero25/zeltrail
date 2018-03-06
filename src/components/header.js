@@ -3,6 +3,12 @@ import Nav from './nav'
 
 import logo from '../assets/img/logo-rentit.png'
 
+import '../assets/js/theme.js'
+import '../assets/js/superfish.js'
+import '../assets/js/jquery.prettyPhoto.js'
+import '../assets/js/moment-with-locales.js'
+import '../assets/js/momentjs.js'
+
 class Header extends Component {
     constructor (props) {
         super(props)

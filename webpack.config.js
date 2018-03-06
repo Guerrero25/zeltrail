@@ -26,7 +26,7 @@ module.exports = {
     historyApiFallback: true,
     compress: true,
     open: true,
-    port: 3000,
+    port: 3001,
     openPage: ''
   },
   module: {
@@ -40,6 +40,17 @@ module.exports = {
         test: /\.json$/,
         exclude: /node_modules/,
         use: 'json-loader'
+      },
+      {
+        test: [/\.css$/],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            'postcss-loader'
+          ]
+        }),
+        exclude: /node_modules/
       },
       {
         test: /\.scss$/,

@@ -23,10 +23,10 @@ module.exports = {
     publicPath: '/',
     historyApiFallback: true,
     compress: true,
-    open: true,
+    open: false,
     hot: true,
     stats: 'errors-only',
-    port: 3000,
+    port: 3001,
     openPage: ''
   },
   module: {
