@@ -1089,7 +1089,7 @@ jQuery(document).ready(function () {
     updater();
 });
 
-jQuery(window).load(function () {
+jQuery(window).on('load', function () {
     // Preloader
     $('#status').fadeOut();
     $('#preloader').delay(200).fadeOut(200);

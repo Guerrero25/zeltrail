@@ -7,12 +7,11 @@ class Nav extends Component {
 
     render () {
         return (
-            <nav className="navigation closed clearfix">
+            <nav className="navigation closed clearfix swiper-container-vertical swiper-container-free-mode">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
-                        
                         <a href="#" className="menu-toggle-close btn"><i className="fa fa-times"></i></a>
-                        <ul className="nav sf-menu">
+                        <ul className="nav sf-menu nav sf-menu sf-js-enabled sf-arrows">
                             <li className="active"><a href="index.html">Home</a>
                                 <ul>
                                     <li><a href="index.html">Home 1</a></li>

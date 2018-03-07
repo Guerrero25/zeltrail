@@ -1,8 +1,15 @@
 import ReactDOM from 'react-dom'
 import React, { Component } from 'react'
 
-import $ from 'jquery';
-
+import './loader'
+import Popper from 'popper.js'
+import 'bootstrap/dist/js/bootstrap.js'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-select/dist/css/bootstrap-select.css'
+import 'bootstrap-select/dist/js/bootstrap-select.js'
+import 'swiper/dist/css/swiper.css'
+import 'swiper/dist/js/swiper.js'
+// import bootstrapDTP from 'bootstrap-datetimepicker'
 import './assets/css/prettyPhoto.css'
 import './assets/css/owl.carousel.css'
 import './assets/css/owl.theme.default.css'
@@ -15,7 +22,6 @@ import Header from './components/header'
 
 class App extends Component {
   render() {
-    console.log($)
     return(
       <div className="wrapper" >
         <Header />

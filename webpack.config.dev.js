@@ -49,8 +49,7 @@ module.exports = {
             'css-loader',
             'postcss-loader'
           ]
-        }),
-        exclude: /node_modules/
+        })
       },
       {
         test: /\.scss$/,
