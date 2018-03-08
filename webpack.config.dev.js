@@ -33,8 +33,15 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: [
+          /node_modules/,
+          path.join(srcDir,'/assets/js/modernizr.custom.js')
+        ],
         use: 'babel-loader'
+      },
+      { 
+        test: /[\\\/]bower_components[\\\/]modernizr[\\\/]modernizr\.js$/,
+        loader: "imports?this=>window!exports?window.Modernizr" 
       },
       {
         test: /\.json$/,

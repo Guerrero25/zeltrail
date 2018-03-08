@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { BrowserRouter as Link } from 'react-router-dom'
 import Nav from './nav'
 
 import logo from '../assets/img/logo-rentit.png'
@@ -21,7 +22,9 @@ class Header extends Component {
                     <div className="container">
 
                         <div className="logo">
-                            <a href="index.html"><img src={logo} alt="Rent It"/></a>
+                            <Link to="/">
+                                <img src={logo} alt="Rent It"/>
+                            </Link>
                         </div>
                         
                         <a href="#" className="menu-toggle btn ripple-effect btn-theme-transparent"><i className="fa fa-bars"></i></a>
